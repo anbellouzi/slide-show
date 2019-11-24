@@ -1,20 +1,108 @@
-.slides-inner {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  transform: translate3d(0, 0, 0);
-  transition: 1000ms;
-}
+/* ******************** */
+/* These styles are required by the slide show */
 
-.slide-show {
+/* Slide show container */
+
+.ms-slide-show {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
+  margin: auto;
 }
 
-/* Developer styles */
-#slides {
-  border: 2px solid red;
+/* Slide show inner contains the slides images */
+
+.ms-slide-show > .slide-show-inner {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  transform: translate3d(0,0,0);
+  transition: 1s;
+  transition-timing-function: linear;
+}
+
+.ms-slide-show-idicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ms-slide-show-idicator > .ms-slide-indicator {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+/* ******************** */
+/* User defined styles */
+
+.banner {
   width: 1200px;
   height: 400px;
   margin: auto;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid;
+  margin: 1em;
+}
+
+#pollen, #pollen-2, #pollen-3 {
+  height: 169px;
+}
+
+.container {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.m-5 {
+  margin: 5px;
+}
+.p-5 {
+  padding: 5px;
+}
+
+.slide-inner-button a {
+  text-decoration: none;
+  font-weight: 900;
+  border: 0;
+  font-size: 30px;
+  color: #686868;
+  display: block;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  bottom: 45%;
+  /* transform: translate(-50%, 0); */
+
+  z-index: 999;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  bottom: 45%;
+  /* transform: translate(-50%, 0); */
+
+  z-index: 999;
 }

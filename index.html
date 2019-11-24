@@ -5,31 +5,85 @@
     <meta charset="utf-8">
     <title>Image Carousel</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
   </head>
   <body>
+    <div class="banner">
+      <div class="ms-slide-show" id="slides" data-indicators="true">
+          <div class="slide-show-inner">
+            <img src="images/bee-1200-400.jpg" width="1200" height="400">
+            <img src="images/beetle-1200-400.jpg" width="1200" height="400">
+            <img src="images/dandelion-1200-400.jpg" width="1200" height="400">
+            <img src="images/flower-900-300.jpg" width="1200" height="400">
+            <img src="images/ladybug-1200-400.jpg" width="1200" height="400">
+            <img src="images/PinkConeflower-1200-400.jpg" width="1200" height="400">
+          </div>
 
-    <div id="slides" class="slide-show">
-      <div class="slides-inner">
-        <img src="images/bee-1200-400.jpg" width="1200" height="400" alt="bee">
-        <img src="images/beetle-1200-400.jpg" width="1200" height="400" alt="beetle">
-        <img src="images/dandelion-1200-400.jpg" width="1200" height="400" alt="dandelion">
-        <img src="images/ladybug-1200-400.jpg" width="1200" height="400" alt="ladybug">
-      </div>
+          <div class="slide-inner-button">
+            <div class="left">
+              <!-- <button type="button" name="button"> < </button> -->
+              <a id="left_button" href="#"><</a>
+            </div>
+            <div class="right">
+              <!-- <button type="button" name="button"> > </button> -->
+              <a id="right_button" href="#">></a>
+            </div>
+          </div>
+        </div>
     </div>
 
-    <div id="slide-2" class="slide-show">
-      <div class="slides-inner">
-        <img src="images/hellebore-300-169.jpg" width="300" height="169" alt="hellbore">
-        <img src="images/li-pollen-300-169.jpg" width="300" height="169" alt="li-pollen">
-        <img src="images/pollen-300-169.jpg" width="300" height="169" alt="pollen">
-        <img src="images/hellebore-pollen-300-169.jpg" width="300" height="169" alt="hellebore pollen">
-        <img src="images/spores-300-169.jpg" width="300" height="169" alt="hellebore pollen">
+    <div class="card-row">
+
+      <div class="card">
+        <div id="pollen" class="slide-show ms-slide-show" data-indicators="true">
+          <div class="slide-show-inner">
+            <img src="images/li-pollen-300-169.jpg" width="300" height="169">
+            <img src="images/spores-300-169.jpg" width="300" height="169">
+            <img src="images/toxic-mold-spore-300-169.jpg" width="300" height="169">
+            <img src="images/zsa-300-169.jpg" width="300" height="169">
+          </div>
+        </div>
+        <h3>Pollen</h3>
+        <p>It makes you sneeze.</p>
       </div>
+
+      <div class="card">
+        <div id="pollen-2" class="slide-show ms-slide-show">
+          <div class="slide-show-inner">
+            <img src="images/Cactus_flower_pollen-300-169.jpg" width="300" height="169">
+            <img src="images/hellebore-pollen-300-169.jpg" width="300" height="169">
+            <img src="images/pollen-300-169.jpg" width="300" height="169">
+            <img src="images/yellow-polllen-300-169.jpg" width="300" height="169">
+          </div>
+        </div>
+        <h3>Pollen</h3>
+        <p>It makes you sneeze.</p>
+      </div>
+
+      <div class="card">
+          <div id="pollen-3" class="slide-show ms-slide-show">
+            <div class="slide-show-inner">
+              <img src="images/p1-300-169.jpg" width="300" height="169">
+              <img src="images/p2-300-169.jpg" width="300" height="169">
+              <img src="images/p3-300-169.jpg" width="300" height="169">
+              <img src="images/p4-300-169.jpg" width="300" height="169">
+            </div>
+          </div>
+          <h3>Pollen</h3>
+          <p>It makes you sneeze.</p>
+        </div>
 
     </div>
 
 
+    <div class="container">
+      <div class="row">
+        <h1>Hello world</h1>
+        <a href="https://www.youtube.com/watch?v=JIx-qgdfr0g&list=PLoN_ejT35AEgjsI-YEuiif2BfpToamnGz&index=1">Youtube Tutorial</a>
+        <div class="m-5 p-5">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TV1WbQdusdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
